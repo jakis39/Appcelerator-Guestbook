@@ -10,6 +10,7 @@ if(Alloy.Collections.contactinfo == undefined) {
 var contactInfo = Alloy.Collections.contactinfo;
 contactInfo.fetch();
 
+/*
 // Create new guest entry for testing
 var newGuest = Alloy.createModel('guests', {
 	firstName : "Charles",
@@ -34,11 +35,11 @@ var newContact2 = Alloy.createModel('contactinfo', {
 	guestId : newGuest.get('guestId')
 });
 
-
 contactInfo.add(newContact1);
 newContact1.save();
 contactInfo.add(newContact2);
-newContact2.save();
+newContact2.save();*/
+
 
 function showGuest(event) {
 		var selectedGuest = event.source;
