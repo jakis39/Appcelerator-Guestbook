@@ -1,0 +1,15 @@
+<Alloy>
+	<Collection src="guests"/>
+	<Window class="container">
+		<TableView dataCollection="guests">
+			<TableViewRow title="{firstName}" firstname="{firstName}" lastname="{lastName}" guestId="{guestId}" onClick="showGuest"></TableViewRow>
+		</TableView>
+		
+		<Menu id="menu" platform="android">
+			<MenuItem id="signGuestbook"
+				title="Sign Guestbook"
+				onClick="signGuestbook"
+				showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/>
+		</Menu>
+	</Window>
+</Alloy>
