@@ -5,13 +5,14 @@ guests.fetch();
 var guest = guests.where({guestId : args.guestId});
 guest = guest[0];
 
-$.firstNameLabel.text = guest.get("firstName");
-$.lastNameLabel.text = " " + guest.get("lastName");
-$.commentLabel.text = guest.get("comment");
-$.dateLabel.text = guest.get("signDate");
+$.name.text = guest.get("firstName") + " " + guest.get("lastName");
+$.comment.text = "\"" + guest.get("comment") + "\"";
+var dateDate = new Date(guest.get("signDate"));
+var dateString = "Signed on " + dateDate.getDate() + "/" + dateDate.getMonth() + "/" + dateDate.getFullYear(); 
+$.date.text = dateString;
 
-var container = $.labelsView;
-console.log(container);
+var contactContainer = $.contactContainer;
+console.log(contactContainer);
 
 var contactinfo = Alloy.Collections.contactinfo;
 var guestContactInfo = contactinfo.where({guestId : args.guestId});
@@ -27,6 +28,6 @@ for(i=0; i<guestContactInfo.length; i++) {
 	var contactValueLabel = Ti.UI.createLabel({
 		text: guestContactInfo[i].get("contactValue")
 	});
-	container.add(contactTypeLabel);
-	container.add(contactValueLabel);
+	contactContainer.add(contactTypeLabel);
+	contactContainer.add(contactValueLabel);
 }

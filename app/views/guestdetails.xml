@@ -1,10 +1,18 @@
 <Alloy>
 	<Window class="container">
-		<View id="labelsView" layout="vertical">
-			<Label id="firstNameLabel"></Label>
-			<Label id="lastNameLabel"></Label>
-			<Label id="commentLabel"></Label>
-			<Label id="dateLabel"></Label>
+		<View id="labelsView" layout="vertical" height="Ti.UI.FILL">
+			
+			<Label id="name"></Label>
+			
+			<View id="commentContainer">
+				<Label id="comment"></Label>
+			</View>
+			
+			<Label id="date"></Label>
+			
+			<Label id="contactLabel">CONTACT</Label>
+			<View id="contactContainer" layout="vertical"></View>
+			
 		</View>
 	</Window>
 </Alloy>

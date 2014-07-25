@@ -1,9 +1,71 @@
 
 ".container" : {
-	backgroundColor: "white"
+	backgroundColor : "#69f"
 }
+
+"View" : {
+	height : Titanium.UI.SIZE
+}
+
 "Label": {
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	color: "#000"
-} 
+}
+
+"#name" : {
+	font : {
+		fontSize: 26
+	},
+	color: "white",
+	top: 10,
+	bottom: 10,
+	left: 15
+}
+
+"#commentContainer" : {
+	backgroundColor: "#eee",
+	borderRadius: 5,
+	width: Titanium.UI.FILL,
+	left: 10,
+	right: 10
+}
+
+"#comment" : {
+	font : {
+		fontSize : 20
+	},
+	color: "#333",
+	left: 15,
+	top: 15,
+	bottom: 15,
+	right: 15
+}
+
+"#date" : {
+	font : {
+		fontSize : 16
+	},
+	color: "#ddd",
+	right: 30,
+	top: 10,
+	width: Titanium.UI.FILL,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+
+"#contactLabel" : {
+	font: {
+		fontSize : 20
+	},
+	color: "#517acc",
+	width: Titanium.UI.FILL,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	top: 10,
+	left: 10
+}
+
+"#contactContainer" : {
+	backgroundColor: "#517acc",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+}

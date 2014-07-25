@@ -4,7 +4,7 @@
 	height : Titanium.UI.SIZE
 }
 "TextField" : {
-	color : "black",
+	backgroundColor: "green",
 	width: Titanium.UI.FILL
 }
 "Picker" : {

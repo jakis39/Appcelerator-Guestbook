@@ -14,7 +14,7 @@
 "TextArea" : {
 	autocapitalization: Titanium.UI.TEXT_AUTOCAPITALIZATION_SENTENCES,
 	width: Titanium.UI.FILL,
-	height : 100
+	height : 150
 }
 
 ".nameField" : {
