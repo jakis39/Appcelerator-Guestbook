@@ -1,0 +1,33 @@
+
+".container" : {
+	backgroundColor : "#ddd"
+}
+
+"View" : {
+	height: Titanium.UI.SIZE
+}
+
+"TextField" : {
+	autocapitalization: Titanium.UI.TEXT_AUTOCAPITALIZATION_WORDS
+}
+
+"TextArea" : {
+	autocapitalization: Titanium.UI.TEXT_AUTOCAPITALIZATION_SENTENCES,
+	width: Titanium.UI.FILL,
+	height : 100
+}
+
+".nameField" : {
+	width: "48%"
+}
+
+".sectionLabel" : {
+	color : "#69f",
+	width : Titanium.UI.FILL,
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	left : 10,
+	top : 10,
+	font: { 
+       fontSize: '20' 
+    }, 
+}

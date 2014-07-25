@@ -1,0 +1,12 @@
+".signText" : {
+	color: "black",
+	backgroundColor: "#eee",
+	backgroundFocusedColor: "#fff",
+	borderColor : "#69f", 
+	borderRadius : 5,
+	borderWidth: 2,
+	left : "1%",
+	right : "1%",
+	top : "1%",
+	bottom : "1%"
+}

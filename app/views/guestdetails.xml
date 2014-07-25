@@ -1,8 +1,8 @@
 <Alloy>
 	<Window class="container">
 		<View id="labelsView" layout="vertical">
-				<Label id="firstNameLabel"></Label>
-				<Label id="lastNameLabel"></Label>
+			<Label id="firstNameLabel"></Label>
+			<Label id="lastNameLabel"></Label>
 			<Label id="commentLabel"></Label>
 			<Label id="dateLabel"></Label>
 		</View>

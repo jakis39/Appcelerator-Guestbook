@@ -19,13 +19,14 @@ var guestContactInfo = contactinfo.where({guestId : args.guestId});
 console.log("contact info array length = " + guestContactInfo.length);
 console.log(guestContactInfo);
 
+// Add labels for each contact method
 for(i=0; i<guestContactInfo.length; i++) {
-	var newLabel1 = Ti.UI.createLabel({
+	var contactTypeLabel = Ti.UI.createLabel({
 		text: guestContactInfo[i].get("contactType")
 	});
-	var newLabel2 = Ti.UI.createLabel({
+	var contactValueLabel = Ti.UI.createLabel({
 		text: guestContactInfo[i].get("contactValue")
 	});
-	container.add(newLabel1);
-	container.add(newLabel2);
+	container.add(contactTypeLabel);
+	container.add(contactValueLabel);
 }

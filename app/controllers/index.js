@@ -42,16 +42,17 @@ newContact2.save();*/
 
 
 function showGuest(event) {
-		var selectedGuest = event.source;
-		var args = {
-			guestId : selectedGuest.guestId
-		};
-		var guestView = Alloy.createController("guestDetails", args).getView();
-		guestView.open();
+	var selectedGuest = event.source;
+	var args = {
+		guestId : selectedGuest.guestId
+	};
+	var guestView = Alloy.createController("guestDetails", args).getView();
+	guestView.open();
 }
 
 function signGuestbook() {
-	
+	var signBook = Alloy.createController("signguestbook", {}).getView();
+	signBook.open();
 }
 
 $.index.open();
