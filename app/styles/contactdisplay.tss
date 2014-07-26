@@ -1,0 +1,44 @@
+".container" : {
+  
+}
+
+".contactInstance" : {
+	backgroundColor: "#69f",
+	borderRadius: 5,
+	width: Titanium.UI.FILL,,
+	height : "50dp",
+	left: 10,
+	right: 10,
+	top: 10
+}
+
+"Label" : {
+	font : {
+		fontSize: 20
+	}
+}
+
+"#contactType" : {
+	color: "#ddd",
+	width : "30%",
+	height : Titanium.UI.FILL,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	top: 5,
+	bottom: 5
+}
+
+"#contactValueContainer" : {
+	backgroundColor: "#ddd",
+	borderRadius: 5,
+	width: Titanium.UI.FILL,
+	top: 2,
+	bottom: 2,
+	right: 2
+}
+
+"#contactValue" : {
+	color : "#333",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	top: 5,
+	bottom: 5
+}

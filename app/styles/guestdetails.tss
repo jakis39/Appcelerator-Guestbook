@@ -60,7 +60,7 @@
 	color: "#517acc",
 	width: Titanium.UI.FILL,
 	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
-	top: 10,
+	top: 5,
 	left: 10
 }
 
