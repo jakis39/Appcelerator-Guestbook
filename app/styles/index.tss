@@ -1,5 +1,5 @@
 ".container": {
-	backgroundColor:"white"
+	backgroundColor:"#606060"
 },
 "Label": {
 	width: Ti.UI.SIZE,
@@ -11,6 +11,12 @@
 	font: {
 		fontSize: 12
 	}
+}
+
+"SearchBar" : {
+	color: "#333",
+	backgroundColor: "#ddd",
+	bottom: 10
 }
 
 "TableViewRow[platform=android]": {    

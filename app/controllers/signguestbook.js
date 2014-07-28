@@ -6,10 +6,6 @@ function signBook() {
 	var lastName = $.lastName.value;
 	var comment = $.comment.value;
 	
-	console.log(firstName);
-	console.log(lastName);
-	console.log(comment);
-	
 	if(firstName == "" || lastName == "" || comment == "") {
 		alert("Please fill out all fields");
 	}

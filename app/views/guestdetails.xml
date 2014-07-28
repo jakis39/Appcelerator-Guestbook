@@ -1,5 +1,5 @@
 <Alloy>
-	<Window class="container">
+	<Window id="window" class="container">
 		<ScrollView scrollType="vertical" id="labelsView" layout="vertical" height="Ti.UI.FILL">
 			<View id="topInfo" layout="vertical">
 				<Label id="name"></Label>
@@ -16,5 +16,12 @@
 			<View id="contactContainer" layout="vertical"></View>
 			
 		</ScrollView>
+		
+		<Menu id="menu" platform="android">
+			<MenuItem id="removeSignature"
+				title="Remove"
+				onClick="removeSignature"
+				showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/>
+		</Menu>
 	</Window>
 </Alloy>

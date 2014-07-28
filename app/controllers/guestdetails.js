@@ -1,4 +1,6 @@
 var args = arguments[0] || {};
+
+// Get guest collection
 var guests = Alloy.Collections.guests;
 guests.fetch();
 
@@ -19,9 +21,6 @@ console.log(contactContainer);
 var contactinfo = Alloy.Collections.contactinfo;
 var guestContactInfo = contactinfo.where({guestId : args.guestId});
 
-console.log("contact info array length = " + guestContactInfo.length);
-console.log(guestContactInfo);
-
 // Add labels for each contact method
 for(i=0; i<guestContactInfo.length; i++) {
 	var newMethod = Alloy.createController("contactdisplay", {
@@ -30,4 +29,16 @@ for(i=0; i<guestContactInfo.length; i++) {
 	}).getView();
 	
 	contactContainer.add(newMethod);
+}
+
+function removeSignature() {
+	// destroy the model from persistence, which will in turn remove
+	// it from the collection, and model-view binding will automatically
+	// reflect this in the tableview
+	for(i=0; i<guestContactInfo.length; i++) {
+		guestContactInfo[i].destroy();
+	}
+	guest.destroy();
+	// Close this window
+	$.guestdetails.close();
 }
