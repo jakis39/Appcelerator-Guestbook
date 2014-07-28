@@ -31,3 +31,7 @@
        fontSize: '20' 
     }, 
 }
+
+"#contactMethods" : {
+	backgroundColor : "#bbb"
+}

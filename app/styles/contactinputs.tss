@@ -1,10 +1,9 @@
 
 ".contactInstance" : {
-	backgroundColor : "#bbb",
-	height : Titanium.UI.SIZE
+	height : "45dp",
+	top: 10
 }
 "TextField" : {
-	backgroundColor: "green",
 	width: Titanium.UI.FILL
 }
 "Picker" : {

@@ -13,7 +13,7 @@
 				<Label class="sectionLabel">How to contact you:</Label>
 			</View>
 			
-			<View id="contactMethods" layout="vertical"></View>
+			<ScrollView scrolltype="vertical" id="contactMethods" layout="vertical"></ScrollView>
 			
 			<View id="buttons" layout="horizontal">
 				<Button id="addContactMethodButton" onClick="addContactMethod">Add contact method</Button>
