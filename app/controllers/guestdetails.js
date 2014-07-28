@@ -29,18 +29,5 @@ for(i=0; i<guestContactInfo.length; i++) {
 		contactVal : guestContactInfo[i].get("contactValue")
 	}).getView();
 	
-	//newMethod.contactType.setText(guestContactInfo[i].get("contactType"));
-	//newMethod.contactValue.setText(guestContactInfo[i].get("contactValue"));
 	contactContainer.add(newMethod);
-	
-	/*
-	var contactTypeLabel = Ti.UI.createLabel({
-			text: guestContactInfo[i].get("contactType")
-		});
-		var contactValueLabel = Ti.UI.createLabel({
-			text: guestContactInfo[i].get("contactValue")
-		});
-		contactContainer.add(contactTypeLabel);
-		contactContainer.add(contactValueLabel);*/
-	
 }

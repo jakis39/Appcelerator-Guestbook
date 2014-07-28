@@ -17,10 +17,6 @@
 	height : 150
 }
 
-".nameField" : {
-	width: "48%"
-}
-
 ".sectionLabel" : {
 	color : "#69f",
 	width : Titanium.UI.FILL,
@@ -32,6 +28,18 @@
     }, 
 }
 
+".nameField" : {
+	width: "48%"
+}
+
 "#contactMethods" : {
-	backgroundColor : "#bbb"
+	backgroundColor : "#bbb",
+	height: Titanium.UI.SIZE
+}
+
+"#buttons" : {
+	left: 10,
+	right: 10,
+	top: 10,
+	bottom: 10
 }

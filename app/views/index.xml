@@ -2,7 +2,17 @@
 	<Collection src="guests"/>
 	<Window class="container">
 		<TableView dataCollection="guests">
-			<TableViewRow title="{firstName}" firstname="{firstName}" lastname="{lastName}" guestId="{guestId}" onClick="showGuest"></TableViewRow>
+			<TableViewRow title="{firstName}" guestId="{guestId}" onClick="showGuest">
+				<View class="tableRow" layout="vertical" height="Titanium.UI.SIZE">
+					<View class="headerSection" layout="horizontal" height="Titanium.UI.SIZE">
+						<Label class="name firstName" text="{firstName}"/>
+						<Label class="name lastName" text="{lastName}"/>
+					</View>
+					<View class="commentSection" height="Titanium.UI.SIZE">
+						<Label class="comment" text="{comment}"/>
+					</View>
+				</View>
+			</TableViewRow>
 		</TableView>
 		
 		<Menu id="menu" platform="android">

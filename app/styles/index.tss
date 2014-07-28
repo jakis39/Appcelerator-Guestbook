@@ -13,10 +13,51 @@
 	}
 }
 
-"TableViewRow[platform=android]": { 
-    font: { 
-       fontSize: '24' 
-    }, 
-    height: '40',
-    color: '#333'
+"TableViewRow[platform=android]": {    
+}
+
+".tableRow" : {
+	backgroundColor: "#93b7ff",
+	borderRadius: "5dp",
+	left: 5,
+	right: 5,
+	top: 3,
+	bottom: 3
+}
+
+".name" : {
+	font : {
+		fontSize: '24'
+	},
+	color: "#111",
+	top: 5
+}
+
+".firstName" : {
+	left: 10
+}
+
+".lastName" : {
+	left: 7
+}
+
+".commentSection" : {
+	backgroundColor: "#eee",
+	borderRadius: "5dp",
+	left: 5,
+	right: 5,
+	top: 5,
+	bottom: 5
+}
+
+".comment" : {
+	font : {
+		fontSize: '20'
+	},
+	color: "#666",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	left: 15,
+	right: 15,
+	top: 10,
+	bottom: 10
 }

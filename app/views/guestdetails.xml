@@ -11,7 +11,7 @@
 			<Label id="date"></Label>
 			
 			<Label id="contactLabel">CONTACT</Label>
-			<ScrollView scrolltype="vertical" id="contactContainer" layout="vertical"></ScrollView>
+			<View id="contactContainer" layout="vertical"></View>
 			
 		</View>
 	</Window>
