@@ -2,7 +2,7 @@
 	<Collection src="guests"/>
 	<Window class="container">
 		<TableView dataCollection="guests">
-			<TableViewRow title="{firstName}" guestId="{guestId}" onClick="showGuest">
+			<TableViewRow title="{firstName}" guestId="{guestId}" firstName="{firstName}" lastName="{lastName}" onClick="showGuest">
 				<View class="tableRow" layout="vertical" height="Titanium.UI.SIZE">
 					<View class="headerSection" layout="horizontal" height="Titanium.UI.SIZE">
 						<Label class="name firstName" text="{firstName}"/>
@@ -15,11 +15,5 @@
 			</TableViewRow>
 		</TableView>
 		
-		<Menu id="menu" platform="android">
-			<MenuItem id="signGuestbook"
-				title="Sign Guestbook"
-				onClick="signGuestbook"
-				showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/>
-		</Menu>
 	</Window>
 </Alloy>

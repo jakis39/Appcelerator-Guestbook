@@ -19,8 +19,11 @@
 }
 
 "#contactType" : {
+	font : {
+		fontSize: 18
+	},
 	color: "#ddd",
-	width : "30%",
+	width : "40%",
 	height : Titanium.UI.FILL,
 	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
 	top: 5,

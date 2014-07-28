@@ -1,6 +1,6 @@
 
 ".container" : {
-	backgroundColor : "#69f"
+	backgroundColor : "#517acc"
 }
 
 "View" : {
@@ -11,6 +11,10 @@
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	color: "#000"
+}
+
+"#topInfo" : {
+	backgroundColor: "#69f"
 }
 
 "#name" : {
@@ -67,5 +71,6 @@
 "#contactContainer" : {
 	backgroundColor: "#517acc",
 	width: Titanium.UI.FILL,
-	height: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	bottom: 10
 }

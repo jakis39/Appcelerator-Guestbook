@@ -1,18 +1,20 @@
 <Alloy>
 	<Window class="container">
-		<View id="labelsView" layout="vertical" height="Ti.UI.FILL">
-			
-			<Label id="name"></Label>
-			
-			<View id="commentContainer">
-				<Label id="comment"></Label>
+		<ScrollView scrollType="vertical" id="labelsView" layout="vertical" height="Ti.UI.FILL">
+			<View id="topInfo" layout="vertical">
+				<Label id="name"></Label>
+				
+				<View id="commentContainer">
+					<Label id="comment"></Label>
+				</View>
+				
+				<Label id="date"></Label>
+				
+				<Label id="contactLabel">CONTACT</Label>
 			</View>
 			
-			<Label id="date"></Label>
-			
-			<Label id="contactLabel">CONTACT</Label>
 			<View id="contactContainer" layout="vertical"></View>
 			
-		</View>
+		</ScrollView>
 	</Window>
 </Alloy>

@@ -11,17 +11,12 @@ var contactInfo = Alloy.Collections.contactinfo;
 contactInfo.fetch();
 
 function showGuest(event) {
-	var selectedGuest = event.source;
-	console.log("EVENT");
-	console.log(event);
-	console.log("SELECTED GUEST");
-	console.log(selectedGuest);
+	var selectedGuest = event.rowData;
 	
-	// Use rowData to get guest id, look in event printout
 	var args = {
 		guestId : selectedGuest.guestId
 	};
-	var guestView = Alloy.createController("guestdetails", args).getView();
+	var guestView = Alloy.createController("guestDetails", args).getView();
 	guestView.open();
 }
 
