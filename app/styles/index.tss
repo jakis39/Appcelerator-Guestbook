@@ -26,17 +26,17 @@
 ".tableRow" : {
 	backgroundColor: "#5677fc",
 	borderRadius: "5dp",
-	left: 10,
-	right: 10,
-	top: 5,
-	bottom: 5
+	left: 5,
+	right: 5,
+	top: 4,
+	bottom: 4
 }
 
 ".name" : {
 	font : {
 		fontSize: '24'
 	},
-	color: "#111",
+	color: "#eee",
 	top: 5
 }
 

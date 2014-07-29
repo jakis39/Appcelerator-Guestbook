@@ -15,7 +15,7 @@
 			
 			<ScrollView scrolltype="vertical" id="contactMethods" layout="vertical"></ScrollView>
 			
-			<Button id="addContactMethodButton" onClick="addContactMethod">Add contact method</Button>
+			<Button id="addContactMethodButton" onClick="addContactMethod"> Add contact method </Button>
 		</ScrollView>
 		
 		<Menu id="menu" platform="android">

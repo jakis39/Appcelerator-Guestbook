@@ -2,7 +2,7 @@
 	<Collection src="guests"/>
 	<Window class="container">
 		<TableView dataCollection="guests" filterAttribute="lastName">
-			<SearchBar hintText="Filter by last name"></SearchBar>
+			<SearchBar id="searchbar" hintText="Filter by last name"></SearchBar>
 			<TableViewRow title="{firstName}" guestId="{guestId}" lastName="{lastName}" onClick="showGuest">
 				<View class="tableRow" layout="vertical" height="Titanium.UI.SIZE">
 					<View class="headerSection" layout="horizontal" height="Titanium.UI.SIZE">

@@ -1,12 +1,12 @@
 <Alloy>
 	<View class="contactInstance" layout="horizontal">
-		<Picker selectionIndicator="true">
+		<Picker id="contactPicker" selectionIndicator="true">
 			<PickerColumn>
 				<PickerRow title="Home phone"/>
 				<PickerRow title="Cell phone"/>
 				<PickerRow title="Email"/>
 			</PickerColumn>
 		</Picker>
-		<TextField hintText="Value" class="signText"></TextField>
+		<TextField id="valueText" hintText="Value" class="signText"></TextField>
 	</View>
 </Alloy>

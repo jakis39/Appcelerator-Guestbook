@@ -32,13 +32,33 @@ for(i=0; i<guestContactInfo.length; i++) {
 }
 
 function removeSignature() {
-	// destroy the model from persistence, which will in turn remove
-	// it from the collection, and model-view binding will automatically
-	// reflect this in the tableview
-	for(i=0; i<guestContactInfo.length; i++) {
-		guestContactInfo[i].destroy();
-	}
-	guest.destroy();
-	// Close this window
-	$.guestdetails.close();
+	var confirm = Titanium.UI.createAlertDialog({
+        title: 'Remove guest',
+        message: 'Are you sure you want delete this guest signature?',
+        buttonNames: ['Yes', 'No'],
+        cancel: 1
+	});
+	
+	confirm.addEventListener('click', function(e){
+        if (e.cancel === e.index || e.cancel === true) {
+        return false;
+        }
+        if (e.index === 0){
+            // destroy the model from persistence, which will in turn remove
+			// it from the collection, and model-view binding will automatically
+			// reflect this in the tableview
+			for(i=0; i<guestContactInfo.length; i++) {
+				guestContactInfo[i].destroy();
+			}
+			guest.destroy();
+			// Close this window
+			$.window.close();
+        }
+	});
+	
+	confirm.show();
+	
+	
+	
+	
 }
