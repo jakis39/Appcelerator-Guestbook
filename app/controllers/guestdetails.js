@@ -11,17 +11,20 @@ guest = guest[0];
 // Fill in name, comment, date
 $.name.text = guest.get("firstName") + " " + guest.get("lastName");
 $.comment.text = "\"" + guest.get("comment") + "\"";
+
+// Convert date from DB (stored as string) to a date object
 var dateDate = new Date(guest.get("signDate"));
+// Use date object to create human readable string
 var dateString = "Signed on " + dateDate.getDate() + "/" + dateDate.getMonth() + "/" + dateDate.getFullYear(); 
 $.date.text = dateString;
 
 var contactContainer = $.contactContainer;
-console.log(contactContainer);
 
+// get guest details from database
 var contactinfo = Alloy.Collections.contactinfo;
 var guestContactInfo = contactinfo.where({guestId : args.guestId});
 
-// Add labels for each contact method
+// Add labels to display each contact method
 for(i=0; i<guestContactInfo.length; i++) {
 	var newMethod = Alloy.createController("contactdisplay", {
 		contactType : guestContactInfo[i].get("contactType"),
@@ -32,6 +35,7 @@ for(i=0; i<guestContactInfo.length; i++) {
 }
 
 function removeSignature() {
+	// Create dialog asking user to confirm deletion
 	var confirm = Titanium.UI.createAlertDialog({
         title: 'Remove guest',
         message: 'Are you sure you want delete this guest signature?',
@@ -41,7 +45,8 @@ function removeSignature() {
 	
 	confirm.addEventListener('click', function(e){
         if (e.cancel === e.index || e.cancel === true) {
-        return false;
+        	// do nothing, close dialog
+        	return false;
         }
         if (e.index === 0){
             // destroy the model from persistence, which will in turn remove
@@ -51,14 +56,10 @@ function removeSignature() {
 				guestContactInfo[i].destroy();
 			}
 			guest.destroy();
-			// Close this window
+			// Close the guestdetails window
 			$.window.close();
         }
 	});
-	
+	// Show dialog
 	confirm.show();
-	
-	
-	
-	
 }
