@@ -15,10 +15,14 @@
 			
 			<ScrollView scrolltype="vertical" id="contactMethods" layout="vertical"></ScrollView>
 			
-			<View id="buttons" layout="horizontal">
-				<Button id="addContactMethodButton" onClick="addContactMethod">Add contact method</Button>
-				<Button id="finishButton" onClick="signBook">Sign</Button>
-			</View>
+			<Button id="addContactMethodButton" onClick="addContactMethod">Add contact method</Button>
 		</ScrollView>
+		
+		<Menu id="menu" platform="android">
+			<MenuItem id="signBook"
+				title="Done"
+				onClick="signBook"
+				showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS"/>
+		</Menu>
 	</Window>
 </Alloy>

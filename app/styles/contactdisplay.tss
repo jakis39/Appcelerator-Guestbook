@@ -3,7 +3,7 @@
 }
 
 ".contactInstance" : {
-	backgroundColor: "#69f",
+	backgroundColor: "#5677fc",
 	borderRadius: 5,
 	width: Titanium.UI.FILL,,
 	height : "50dp",

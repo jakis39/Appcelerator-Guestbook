@@ -1,6 +1,6 @@
 
 ".container" : {
-	backgroundColor : "#ddd"
+	backgroundColor : "#585e66"
 }
 
 "View" : {
@@ -18,7 +18,7 @@
 }
 
 ".sectionLabel" : {
-	color : "#69f",
+	color : "white",
 	width : Titanium.UI.FILL,
 	textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT,
 	left : 10,
@@ -33,11 +33,17 @@
 }
 
 "#contactMethods" : {
-	backgroundColor : "#bbb",
+	backgroundColor : "#43484f",
 	height: Titanium.UI.SIZE
 }
 
-"#buttons" : {
+"#addContactMethodButton" : {
+	color: "#eee",
+	backgroundColor: "#5677fc",
+	borderRadius : 5,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
 	left: 10,
 	right: 10,
 	top: 10,

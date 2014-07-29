@@ -1,5 +1,5 @@
 ".container": {
-	backgroundColor:"#606060"
+	backgroundColor:"#32363a"
 },
 "Label": {
 	width: Ti.UI.SIZE,
@@ -14,21 +14,22 @@
 }
 
 "SearchBar" : {
-	color: "#333",
-	backgroundColor: "#ddd",
+	color: "#eee",
+	backgroundColor: "#585e66",
 	bottom: 10
 }
 
-"TableViewRow[platform=android]": {    
+"TableView": {
+	separatorColor: "transparent"    
 }
 
 ".tableRow" : {
-	backgroundColor: "#93b7ff",
+	backgroundColor: "#5677fc",
 	borderRadius: "5dp",
-	left: 5,
-	right: 5,
-	top: 3,
-	bottom: 3
+	left: 10,
+	right: 10,
+	top: 5,
+	bottom: 5
 }
 
 ".name" : {
@@ -60,10 +61,10 @@
 	font : {
 		fontSize: '20'
 	},
-	color: "#666",
+	color: "#333",
 	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
-	left: 15,
-	right: 15,
+	left: 10,
+	right: 10,
 	top: 10,
 	bottom: 10
 }

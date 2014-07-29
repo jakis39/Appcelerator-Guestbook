@@ -1,6 +1,6 @@
 
 ".container" : {
-	backgroundColor : "#517acc"
+	backgroundColor : "#455ede"
 }
 
 "View" : {
@@ -14,7 +14,7 @@
 }
 
 "#topInfo" : {
-	backgroundColor: "#69f"
+	backgroundColor: "#43484f"
 }
 
 "#name" : {
@@ -61,7 +61,7 @@
 	font: {
 		fontSize : 20
 	},
-	color: "#517acc",
+	color: "#455ede",
 	width: Titanium.UI.FILL,
 	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
 	top: 5,
@@ -69,7 +69,7 @@
 }
 
 "#contactContainer" : {
-	backgroundColor: "#517acc",
+	backgroundColor: "#455ede",
 	width: Titanium.UI.FILL,
 	height: Titanium.UI.SIZE,
 	bottom: 10

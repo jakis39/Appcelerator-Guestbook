@@ -16,7 +16,7 @@ function showGuest(event) {
 	var args = {
 		guestId : selectedGuest.guestId
 	};
-	var guestView = Alloy.createController("guestDetails", args).getView();
+	var guestView = Alloy.createController("guestdetails", args).getView();
 	guestView.open();
 }
 

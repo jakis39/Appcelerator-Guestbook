@@ -2,7 +2,7 @@
 	color: "black",
 	backgroundColor: "#eee",
 	backgroundFocusedColor: "#fff",
-	borderColor : "#69f", 
+	borderColor : "#5677fc", 
 	borderRadius : 5,
 	borderWidth: 2,
 	left : "1%",
