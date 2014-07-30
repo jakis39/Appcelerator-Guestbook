@@ -1,18 +1,5 @@
-Welcome to your Appcelerator Titanium Mobile Project
+This is a simple guestbook application written with Appcelerator, completed as an assignment for a job interview.
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+The app allows users to view other signatures in the guest book, as well as adding and deleting entries, etc. I will leave the app here to serve as a reference/example for people new to Appcelerator like I was a week ago.
 
-
-
-----------------------------------
-Stuff our legal folk make us say:
-
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
-
-Titanium is Copyright (c) 2008-2013 by Appcelerator, Inc. All Rights Reserved.
-
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
-
+Here is a design document I wrote which details the app's functionality: http://goo.gl/BTjlMt
